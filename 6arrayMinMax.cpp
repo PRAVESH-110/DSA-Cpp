@@ -1,5 +1,5 @@
-
-//IN CPP THERE RE LSO INBUILT FUNCTIONS LIKE max() min() etc FOR ARRAYS, BUT TRY USING NORML WAY FIRST
+//find min and max of an array
+//IN CPP THERE ARE ALSO INBUILT FUNCTIONS LIKE max() min() etc FOR ARRAYS, BUT TRY USING NORML WAY FIRST
 #include<iostream>
 using namespace std;
 
@@ -18,7 +18,7 @@ int main() {
     int max = num[0]; // Initialize with the first element
 
     for(int i = 1; i < size; i++) {
-        if(num[i] > max) {
+        while(num[i] > max) {
             max = num[i];
         }
     }

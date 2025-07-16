@@ -6,7 +6,7 @@ void reverse(int arr[], int n){
     int start=0;
     int end= n-1;
     while(start<=end){
-        swap(start,end);
+        swap(arr[start],arr[end]);//here if wed assigned, then only the start value changed, but we want to swap both the values
         start++;
         end--;
     }
@@ -19,14 +19,10 @@ void printArry(int arr[], int n){
     cout<<endl;
 }
 int main(){
-    int arr[6]= {1,2,4,5,6,3};
-    int arr[5]= {1,2,4,5,6};
-
-    reverse(arr,6);
-    reverse(arr,5);
-
-    printArray(arr, 6);
-    printArray(arr, 5);
+    int arr[] = {1, 2, 3, 4, 5};
+    int n = sizeof(arr)/sizeof(arr[0]);
+    reverse(arr,n);
+    printArry(arr,n);
 
     return 0;
 }
