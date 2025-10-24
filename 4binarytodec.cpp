@@ -1,29 +1,31 @@
 //for decimal to binary use mod and increment operator and for binary to decimal use & / ~ 
-// and right/ left shift operator
+// and binary to decimal, we use left/ right shift operator
+
+//convert binary to decimal
 #include<iostream>
 #include<math.h>
 using namespace std;
 
 int binarytodec(int n){
-    int i=0;
-    int digit=0;
+    int power=0;
+    int ans=0;
     while(n!=0){
-        int ans=n%10;
-        if(ans==1){
-            digit=digit+pow(2,i);
+        int digit=n%10;
+        if (digit==1){
+            ans=ans+pow(2,power);
+        }
+        else{
         }
         n=n/10;
-        i++;
+        power++;
     }
-    cout<<digit<<endl;
-
+    return ans;
 }
 
-int decimaltobin(int n){
-    //using advanced methods- using recursion etc
-}
+
 int main(){
     int n;
     cin>>n;
-    binarytodec(n);
+    cout<<binarytodec(n)<<endl;
+    return 0;
 }

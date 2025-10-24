@@ -12,7 +12,7 @@ char getmaxoccuringstring(string s){
     for(int i=0;i<s.size();i++){
         char ch=s[i];
         int count=0;
-        count=ch-'a'; //converts index back to the character andreturns the ASCII value of the character
+        count=ch-'a'; //converts index back to the character and returns the ASCII value of the character
         arr[count]++;
     }
 

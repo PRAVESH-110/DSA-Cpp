@@ -1,3 +1,4 @@
+//finc the power of two usinf recursion
 #include<iostream>
 using namespace std;
 int pow(int n){

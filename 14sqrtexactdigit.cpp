@@ -1,4 +1,4 @@
-//find out sqrt to the exact digit
+//find out sqrt to the exact digit using O(log N)
 #include<iostream>
 using namespace std;
 
@@ -13,8 +13,13 @@ int binarySearch(int n){
             return mid;
         }
         if(sqr<n){
-            
+            ans=mid;
+            s=mid+1;
         }
+        else{
+            e=mid-1;
+        }
+        mid=s+(e-s)/2;
     }
     return ans;
 }

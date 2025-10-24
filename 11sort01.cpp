@@ -1,3 +1,4 @@
+//sort 0s and 1s together
 #include<iostream>
 using namespace std;
 

@@ -22,5 +22,5 @@ int main(){
     else{
         cout<<"not prime"<<endl;
     }
-    
+    return 0;
 }

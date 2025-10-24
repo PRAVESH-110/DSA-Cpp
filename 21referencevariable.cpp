@@ -5,6 +5,8 @@ using namespace std;
 //     int i=5;
 //     int &j=i;
 //     j++;
+//     cout<<j;
+//     return 0;
 // }
 
 void update1(int& k){

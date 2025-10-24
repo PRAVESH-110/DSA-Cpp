@@ -3,7 +3,7 @@ using namespace std;
 
 
 void update(int *p){
-    *p=p+1;
+    *p=*p+1;
 }
 int getsum(int arr[], int n){
     int sum=0;

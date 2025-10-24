@@ -2,6 +2,8 @@
 #include<iostream>
 #include<string>
 #include<vector>
+#include<math.h>
+#include <algorithm>
 
 using namespace std;
 class Solution{
@@ -23,3 +25,12 @@ class Solution{
         }
     }
 };
+int main(){
+    vector<char> s = {'i',' ','a','m',' ','a',' ','b','o','y'};
+    Solution sol;
+    sol.reverseWords(s);
+    for (char c : s) {
+        cout << c;
+    }
+    return 0;
+}
