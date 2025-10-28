@@ -2,12 +2,20 @@
 #include<iostream>
 using namespace std;
 int sumofarr(int *arr, int n){
+    // if(n==0){
+    //     return 0;
+    // } 
+
+    // int smallerarr=sumofarr(arr+1, n-1); //here arr[0] becomes the current array element when the arr+1, and size dec by 1
+    // int total=arr[0]+smallerarr;
+    // return total;
+
     if(n==0){
         return 0;
-    } 
+    }
 
-    int smallerarr=sumofarr(arr+1, n-1); //here arr[0] becomes the current array element when the arr+1, and size dec by 1
-    int total=arr[0]+smallerarr;
+    int sum= sumofarr(arr+1, n-1);
+    int total=arr[0]+ sum;
     return total;
 }
 int main(){
@@ -17,3 +25,4 @@ int main(){
     cout<<result;
     return 0;
 }
+
