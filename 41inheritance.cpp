@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+
+class Animal{
+    public:
+    int age;
+    int weight;
+
+    public:
+    void speak(){
+        cout<<"I am speaking"<<endl;
+    }
+};
+// single level inheritance
+class Dog: public Animal{ //class animal inherited in public mode 
+   
+};
+
+
+int main(){
+    Dog d;
+    d.speak();
+    cout<<d.age<<endl;
+    return 0;
+}

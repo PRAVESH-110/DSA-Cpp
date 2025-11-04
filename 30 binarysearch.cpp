@@ -1,3 +1,5 @@
+///binary seaerch using recursion
+
 #include<iostream>
 using namespace std;
 void print(int arr[], int s, int e){
