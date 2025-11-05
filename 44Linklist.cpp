@@ -1,4 +1,4 @@
-//code to insert a new data to 
+//code to insert a new data to the head
 
 #include<iostream>
 using namespace std;
