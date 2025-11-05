@@ -1,21 +1,23 @@
+//code to insert a new data to 
+
 #include<iostream>
 using namespace std;
 
 class Node{
     public:
-    int data;
+    int data; //data of the linked list node (both data and adress to the next pointer)
     Node* next;
 
     Node(int data){
         this -> data=data;
-        this -> next=next;
+        this -> next=NULL;
     }
 };
 
 void insertatHead(Node* &head, int d){
-    Node* temp=new Node(d);
-    temp-> next=head;
-    head=temp;
+    Node* temp=new Node(d); //create a new node with value d
+    temp-> next=head; //new node -> old head
+    head=temp; //move head to new node
 }
 
 void print (Node* &head){
@@ -35,6 +37,7 @@ int main(){
 
     Node*head= node1;
     print(head);
+
 
     insertatHead(head, 15);
     print(head);
