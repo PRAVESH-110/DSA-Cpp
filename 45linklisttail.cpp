@@ -1,4 +1,4 @@
-//code to insert a new data to the head
+//code to insert a new node to the head
 #include<iostream>
 using namespace std;
 
@@ -13,6 +13,7 @@ class Node{
     }
 };
 
+//insert a new node at the tail
 void insertAtTail(Node* &tail, int d){
     Node* temp =new Node(d);
 
