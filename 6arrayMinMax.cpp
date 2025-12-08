@@ -15,10 +15,10 @@ int main() {
         cin >> num[i];
     }
 
-    int max = num[0]; // Initialize with the first element
+    int max = 0; // Initialize with the first element
 
     for(int i = 1; i < size; i++) {
-        while(num[i] > max) {
+        while(num[i] > num[max]) {
             max = num[i];
         }
     }

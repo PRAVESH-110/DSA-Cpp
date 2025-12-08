@@ -4,13 +4,12 @@ using namespace std;
 
 //find fact of a no.
 int factorial(int n){
-
-    int fact=1;
-    
+    int ans=1;
     for(int i=1;i<=n;i++){
-        fact=fact*i;
+        ans=ans*i;
+
     }
-    return fact;
+    return ans;
 }
 
 int ncr(int n, int r){
