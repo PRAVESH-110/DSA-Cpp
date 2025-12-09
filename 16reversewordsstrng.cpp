@@ -23,6 +23,11 @@ class Solution{
                 start = end + 1;
             }
         }
+
+        // int n=s.size();
+        // reverse(s.begin(),s.end());
+
+        // for(int end=0;)
     }
 };
 int main(){

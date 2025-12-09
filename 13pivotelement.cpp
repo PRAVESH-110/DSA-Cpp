@@ -4,20 +4,34 @@
 using namespace std;
 
 int pivotSearch(int arr[], int n){
+    // int s=0;
+    // int e=n-1;
+    // int mid=s+(e-s)/2;
+    // while(s<e){
+        
+    //     if(arr[mid]>arr[0]){
+    //         s=mid+1;
+    //     }
+    //     else{
+    //         e=mid; //because if we do end-1, then we'll miss out the mid element (and  it might be the pivot)
+    //     }
+    //     mid=s+(e-s)/2;
+    // }
+    // return s; //here were return s as starting elemnt (of either branch) is the smallest and is pivot
+
     int s=0;
     int e=n-1;
     int mid=s+(e-s)/2;
+
     while(s<e){
-        
-        if(arr[mid]>arr[0]){
+        if(arr[mid]>arr[s]){
             s=mid+1;
         }
         else{
-            e=mid; //because if we do end-1, then we'll miss out the mid element (and  it might be the pivot)
+            e=mid;
         }
         mid=s+(e-s)/2;
     }
-    return s; //here were return s as starting elemnt (of either branch) is the smallest and is pivot
 }
 int main(){
     int arr[]={8,10,17,1,3};

@@ -20,8 +20,8 @@ int main(){
     update(p);
     cout<<"after"<<*p<<endl;
 
-    int arr[5]={1,2,3,4,5};
-    cout<<"sum is"<<getsum(arr,5)<<endl;
+    // int arr[5]={1,2,3,4,5};
+    // cout<<"sum is"<<getsum(arr,5)<<endl;
 
     return 0;
 }

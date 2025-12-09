@@ -13,7 +13,7 @@ void reverse(string &str, int i, int j){
 }
 int main(){
     string name= "babbar";
-    reverse(name,0,name.length()-1); 
+    reverse(name,0,name.length()-1);
     cout<<name;
     return 0;
 

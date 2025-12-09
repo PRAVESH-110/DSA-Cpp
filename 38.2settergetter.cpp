@@ -12,6 +12,7 @@ class hero{
 
     int getage(){
         return age; //getter to access a private class property
+        //currently return a garbage value (size 1 byte) since no value given in function 
     }
     int setage(int a){  //setter to set the property of a private class
         age=a;
