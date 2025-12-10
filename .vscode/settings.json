@@ -8,6 +8,7 @@
         "comments": false,
         "strings": false
     },
+    
     "editor.suggestOnTriggerCharacters": false,
     "editor.inlineSuggest.enabled": false,
     "C_Cpp.autocomplete": "Disabled"
