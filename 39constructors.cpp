@@ -1,37 +1,24 @@
-//there is a default constructor and when we create one outself the default gets deleted and replaced
-
-//contructor - 3 types: simple, parameterized and copy const.
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 class hero{
-
-    private:
-    int health;
-
     public:
+    int age;
     char level;
 
+    //a cdefault constructor is created
     hero(){
-        cout<<"ccontructor called by default"<<endl;
-    }
-
-    //parameterisd const
-    hero(int health){
-        cout<<"this-> output"<<this<<endl;
-        //we use 'this' to point to the nearest constructor (here this points to health of line-7)
-        this-> health=health;
-    }
-
-    int gethealth(){
-        return health; //getter (although not req)
+        cout<<"constructor called"<<endl;
     }
 };
+ 
 int main(){
-    hero pravesh(10);
-    cout<<"address if pravesh using this"<< &pravesh<<endl;
-    pravesh.gethealth();
+    //object created statically
+    hero pravesh;
 
-    hero *rohit=new hero; //dynamically created object 
+    //object created dynamically
+    hero *pd= new hero;
+
+    //both call same
     return 0;
 }

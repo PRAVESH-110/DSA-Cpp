@@ -33,6 +33,7 @@ int main(){
     //we can also dynamically allocate memory-> heap memory
     hero *rohit =new hero;
     cout<<"age is "<<(*rohit).getage()<<endl;
+    
     //other way to write it is:
     cout<<"age is"<<rohit->getage()<<endl;
 
