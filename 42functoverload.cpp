@@ -1,8 +1,7 @@
 #include<iostream>
 using namespace std;
 
-//2/more funct can have the same name but must differ in the parameter
-// functions can have same name but also must have diff return type (eg: )
+//2/more funct can have the same name but must differ in either the parameter or return type
 class A {
     public:
  
