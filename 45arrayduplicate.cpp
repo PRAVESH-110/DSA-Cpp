@@ -27,6 +27,7 @@ int removeDup(vector<int>arr){
     }
     return start+1;
 }
+
 int main(){
     vector<int>v={1,4,4,5,5,5,6};
     int newSize= removeDup(v);
