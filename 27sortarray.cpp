@@ -19,7 +19,7 @@ bool sortarray(int *arr, int n){
     // if(n==0) return true;
     // if(n==1) return true;
 
-    // if(arr[n]>arr[n-1]){
+    // if(arr[n]>arr[n-1]){  
     //     return true;
     // }
 }

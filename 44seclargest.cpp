@@ -26,18 +26,31 @@ using namespace std;
 
 //optimal approach
 void secLargest(vector<int> arr){
+	// int largest=arr[0];
+	// int second= -1;
+	// for(int i=0;i<arr.size();i++){
+	// 	if(arr[i]>largest){
+	// 		second=largest;
+	// 		largest=arr[i];
+	// 	}
+	// 	else if(arr[i]<largest && arr[i]>second){
+	// 		second=arr[i];
+	// 	}
+	// }
+	// cout<<second;
+
 	int largest=arr[0];
-	int second= -1;
-	for(int i=0;i<arr.size();i++){
+	int secLargest=-1;
+	for(int i=1;i<arr.size();i++){
 		if(arr[i]>largest){
-			second=largest;
 			largest=arr[i];
+			secLargest=largest;
 		}
-		else if(arr[i]<largest && arr[i]>second){
-			second=arr[i];
+		else if(arr[i]>secLargest && arr[i]<largest){
+			secLargest= arr[i];
 		}
 	}
-	cout<<second;
+	cout<<secLargest;
 }
 
 int main(){

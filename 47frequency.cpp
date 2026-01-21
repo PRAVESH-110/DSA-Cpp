@@ -5,7 +5,7 @@ using namespace std;
 
 void frequency(string s) {
 
-    //brute force
+    //brute forcwe
     // for (int i = 0; i < s.length(); i++) {
     //     int count = 1;
 
@@ -14,7 +14,7 @@ void frequency(string s) {
     //     for (int j = i + 1; j < s.length(); j++) {
     //         if (s[i] == s[j]) {
     //             count++;
-    //             s[j] = '0'; // mark counted
+    //             s[j] = '0'; // mark counted 
     //         }
     //     }
 
@@ -24,9 +24,21 @@ void frequency(string s) {
     // }
 
     //optimal
+    for(int i=0;i<s.length()-1;i++){
+        int count=0;
+        for(int j=i+1;j<s.length();j++){
+            if(s[i]==s[j]){
+                count++;
+                s[j]='0';
+            }
+        }
+        if(s[i]!='0'){
+            cout<<s[i]<<":"<<count<<endl;
+    }
+    }
     
 }
 int main(){
-    string s="pravesh";
+    string s="prava sh";
     frequency(s);
 }

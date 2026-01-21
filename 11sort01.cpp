@@ -9,6 +9,8 @@ void printArray(int arr[], int n){
     }
     cout<<endl;
 }
+
+
 void sortOne(int arr[], int n){
     int i=0;
     int j=n-1;
@@ -16,7 +18,7 @@ void sortOne(int arr[], int n){
         while(arr[i]==0){
         i++;
         }
-        while(arr[j]==1){
+        while(arr[j]==1){     
         j--;
         }
     if(i<j){
