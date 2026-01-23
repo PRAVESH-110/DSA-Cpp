@@ -5,29 +5,46 @@ using namespace std;
 
 
 // BRUTE FORCE APPROACH
+
 // void arrayDuplicate(vector<int>& arr){
-//     set<int> s(arr.begin(), arr.end());  // removes duplicates
-
-//     int i = 0;
-//     for (int x : s) {
-//         arr[i++] = x;    // overwrite original array
+//     set<int> st;
+//     for(int i=0;i<arr.size();i++){
+//         st.insert(arr[i]);
 //     }
-
-//     arr.resize(s.size());  // remove extra elements
 // }
+
+
+//better solution: using auto iterator of set (meaning till iterate all over the set)
+// void arrayDuplicate(vector<int>& arr){
+//     int index=0;
+//     for(auto it:st){
+//         arr[index]= it;
+//         index++;
+//     }
+// }
+
 
 //OPTIMAL APROACH: USING 2 PTR
 int removeDup(vector<int>arr){
     int start=0;
     for(int i=1;i<arr.size();i++){
         if(arr[i]!=arr[start]){
+            //arr[start+1] since we are assigning the position of one arr index ahead of i to start ptr
             arr[start+1]=arr[i];
             start++;
         }
     }
-    return start+1;
+    return(start+1) ;
 }
 
+int movezero(vector<int>arr){
+    for(int i=0;i<arr.size();i++){
+        int j=arr.size();
+        if(arr[i]==0){
+            swap(arr[i],arr[j]);
+        }
+    }
+}
 int main(){
     vector<int>v={1,4,4,5,5,5,6};
     int newSize= removeDup(v);
