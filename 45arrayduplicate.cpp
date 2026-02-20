@@ -37,14 +37,6 @@ int removeDup(vector<int>arr){
     return(start+1) ;
 }
 
-int movezero(vector<int>arr){
-    for(int i=0;i<arr.size();i++){
-        int j=arr.size();
-        if(arr[i]==0){
-            swap(arr[i],arr[j]);
-        }
-    }
-}
 int main(){
     vector<int>v={1,4,4,5,5,5,6};
     int newSize= removeDup(v);

@@ -14,9 +14,8 @@ class Hero{
     // void level(){
     //     cout<<level<<endl;
     // }
-
-
 };
+
 int main(){
     Hero h1;
 

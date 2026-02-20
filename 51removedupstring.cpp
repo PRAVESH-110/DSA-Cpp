@@ -9,7 +9,7 @@ void removeDup(string s){
     bool seen[256]={false};
 
     for(char c:s){
-        //seen is thea marker of- if seen before or not
+        //seen is the marker of- if seen before or not
         if(seen[c]==false){
             result=result+c;
             seen[c]=true;
