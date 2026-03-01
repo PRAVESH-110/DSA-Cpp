@@ -1,3 +1,4 @@
+//remove duplicates from sodrted array
 #include<iostream>
 #include<vector>
 #include<set>

@@ -7,33 +7,19 @@
 using namespace std;
 
 int binarytodec(int n){
-    // int power=0;
-    // int ans=0;
-    // while(n!=0){
-    //     int digit=n%10;
-    //     if (digit==1){
-    //         ans=ans+pow(2,power);
-    //     }
-    //     else{
-    //     }
-    //     n=n/10;
-    //     power++;
-    // }
-    // return ans;
     int power=0;
-    int sum=0;
+    int ans=0;
     while(n!=0){
         int digit=n%10;
-        if(digit==1){
-            sum=sum+pow(2,power);
+        if (digit==1){
+            ans=ans+pow(2,power);
         }
         else{
         }
-    power++;
-    n=n/10;
+        n=n/10;
+        power++;
     }
-
-    return sum;
+    return ans;
  
 }
 
