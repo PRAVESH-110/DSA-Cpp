@@ -13,5 +13,4 @@ cout<<"before"<<num<<endl;
 (*p)++;
 cout<<"after"<<num<<endl; //here refernce is passes, so value changes
 return 0;
-
 }
