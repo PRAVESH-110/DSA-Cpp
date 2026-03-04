@@ -1,22 +1,21 @@
+//find first non repeating character in string
 #include <iostream>
 using namespace std;
 
+void nonRepeating(string s){
+    int freq[256]={0};
+    for(char c:s){
+        freq[c]++;
+    }
+    for(char c:s){
+        if(freq[c]==1){
+            cout<<c;
+            break;
+        }
+    }
+}
 int main() {
-  
-  	// Two variables of different type
-	int i = 10;
-    char c = 'A';
-  
-  	// printing c after manually converting it
-  	cout << (int)c << endl;
-  	
-  	// Adding i and c,
-  	int sum = i + c;
-  
-  	// Printing sum
-  	cout << sum;
-  	
+  	string s="praveen";
+    nonRepeating(s);
     return 0;
 }
-//output: 65 | As c manually converts to its ASCII
-//there are 2 types of it: implicit and explicit
