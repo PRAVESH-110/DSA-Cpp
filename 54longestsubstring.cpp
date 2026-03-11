@@ -4,17 +4,15 @@
 using namespace std;
 
 int subString(string s){
-    int freq[256]={0};
     int l=0;
     int r=l+1;
+    int hash[256]={-1};
     for(int i=0;i<s.length();i++){
-        if(freq[s[i]]==0){
+        if(hash[s[i]]==-1){
             r++;
         }
-        else{
-            l=r+1;
-            r=l+1;
-        }
+        l=i+1;
+        r=l+1;
     }
 
 }
