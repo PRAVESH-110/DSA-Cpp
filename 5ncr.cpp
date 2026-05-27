@@ -1,4 +1,4 @@
-//find ncr of a given number
+//find factorial of a given number
 #include<iostream>
 using namespace std;
 
