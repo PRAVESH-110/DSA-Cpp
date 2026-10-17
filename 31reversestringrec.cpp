@@ -16,5 +16,4 @@ int main(){
     reverse(name,0,name.length()-1);
     cout<<name;
     return 0;
-
 }

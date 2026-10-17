@@ -1,4 +1,4 @@
-// Online C++ compiler to run C++ program online
+//reverse the words of a steing
 #include <iostream>
 #include<string>
 #include <algorithm>

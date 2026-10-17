@@ -16,10 +16,17 @@ void removeDup(string s){
         }
     }
     cout<<result;
-
 }
 int main(){
     string s="pravash";
     removeDup(s);
     return 0;
 }
+
+
+
+
+
+
+
+

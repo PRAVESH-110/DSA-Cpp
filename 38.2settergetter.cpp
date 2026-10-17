@@ -20,7 +20,6 @@ class hero{
     int getlevel(){
         return level;
     }
-
 }; 
 
 int main(){

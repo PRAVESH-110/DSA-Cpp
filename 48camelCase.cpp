@@ -25,7 +25,7 @@ string camelCase(string s){
     //we do not use any method to remove hte spacs rather, we mark the marker as true and skip it altogether
     for(int i=0;i<s.length();i++){
         if(s[i]==' '){
-            capitalize= true;
+            capitalize= true; 
         }
         else{
             if(capitalize){

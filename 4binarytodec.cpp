@@ -20,7 +20,6 @@ int binarytodec(int n){
         power++;
     }
     return ans;
- 
 }
 
 

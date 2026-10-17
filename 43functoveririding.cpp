@@ -22,5 +22,6 @@ int main(){
 	Dog d;
 	//now how to decide which function to execute (base classs func or child class)
 	d.speaks();
+	//see output and dind out
     return 0;
 }

@@ -7,7 +7,7 @@ int pow(int n){
     }
     int small=pow(n-1); // ans= 2 * 2^2....
     int big=2*small;
-
+    return big;
 }
 int main(){
     int n;
