@@ -30,3 +30,4 @@ int main(){
     cout<<binarytodec(n)<<endl;
     return 0;
 }
+

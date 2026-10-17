@@ -12,8 +12,6 @@ int factorial(int n){
     return ans;
 }
 
-
-
 int ncr(int n, int r){
     int numerator=factorial(n);
     int denom = factorial(r) * factorial(n-r);
